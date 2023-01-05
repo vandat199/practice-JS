@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.drop-target {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#drag-item {
+    width: 200px;
+}

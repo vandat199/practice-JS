@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+table {
+    width: 400px;
+}
+td {
+    height: 40px;
+    width: 100px;
+}
+
+#total-product {
+    text-align: right;
+}
+
+#product-name {
+    text-align: left;
+}
+
+#head-product {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.red {
+    background: red;
+}
+
+button {
+    color: #fff;
+    background: rgb(42, 177, 42);
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid2, .grid1 {
+    padding: 6px;
+}

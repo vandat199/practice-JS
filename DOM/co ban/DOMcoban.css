@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.none {
+    display: none;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: red;
+}
+
+div img {
+    width: 100px;
+    /* height: auto; */
+}
+
+#bai6 {
+    position: relative;
+}
+img {
+    position: relative;
+}
+
+#contain-square , #bai12-contain-square{
+    display: flex;
+    gap: 5px;
+}
+.square-item, .bai12-square-item {
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+
+#bai14-changebackground {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+#bai16 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}

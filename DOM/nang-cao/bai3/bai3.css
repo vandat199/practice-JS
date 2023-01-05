@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    width: fit-content;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    height: 30px;
+    width: 200px;
+    /* text-overflow: ellipsis; */
+    
+}
+
+td {
+    /* padding: 20px; */
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+
+#expression, #result {
+    text-align: right;
+    width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#history {
+    width: 300px;
+    border: 1px solid black;
+    text-align: right;
+    white-space: nowrap;
+    /* overflow-y:  scroll;
+    overflow-x: hidden; */
+    overflow: scroll;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="choose-action">
+        <button class="btn-form-login">dang nhap</button>
+        <button class="btn-form-signin">dang ky</button>
+    </div>
+    <div id="login" class="none">
+        <h3>dang nhap</h3>
+        <div>
+            <label for="username-login">username</label>
+            <input type="text" name="username-login" id="username-login">
+        </div>
+        <div>
+            <label for="password-login">password</label>
+            <input type="text" name="password-login" id="password-login">
+        </div>
+        <div>
+            <button id="btn-login">dang nhap</button>
+            <button class="btn-form-signin">ve trang dang ky</button>
+        </div>
+    </div>
+    <div id="signin" class="none">
+        <h3>dang ky</h3>
+        <div>
+            <label for="email-regis">email</label>
+            <input type="email" name="email-regis" id="email-regis">
+            <p class="error-message none">Truong nay phai la email</p>
+        </div>
+        <div>
+            <label for="phone-number-regis">phone number</label>
+            <input type="tel" name="phone-number-regis" id="phone-number-regis">
+            <p class="error-message none">Truong nay phai la so dien thoai</p>
+        </div>
+        <div>
+            <label for="username-regis">username</label>
+            <input type="text" name="username-regis" id="username-regis">
+            <p class="error-message none">username khong duoc de trong</p>
+        </div>
+        <div>
+            <label for="password-regis">password</label>
+            <input type="text" name="password-regis" id="password-regis">
+            <p class="error-message none">password phai co 8 ky tu tro len</p>
+        </div>
+        <div>
+            <button id="btn-signin">dang ky</button>
+            <button class="btn-form-login">ve trang dang nhap</button>
+        </div>
+    </div>
+    
+    <button type="button" value="trang moi" onclick="newDoc()">trang moi</button>
+</body>
+<script src="bai2.js"></script>
+</html>

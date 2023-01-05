@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai1.css">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="tip-calculator">
+
+        <div class="heading">
+            <h3>TIP CALCULATOR</h3>
+        </div>
+
+        <div class="form-group">
+            <div class="form-item">
+                <label for="totalbill" class="form-label">How much was your bill?</label>
+                <div><span>$ </span><input type="number" name="totalbill" id="totalbill" placeholder="Bill Amount" class="form-input" min="0"></div>
+            </div>
+    
+            <div class="form-item">
+                <label for="service" class="form-label">How was your service</label>
+                <div>
+                    <select name="service" id="form-select">
+                        <option value="Option" class="select-option">--Choose an Option--</option>
+                        <option value="30" class="select-option">30% - Outstanding</option>
+                        <option value="20" class="select-option">20% Good</option>
+                        <option value="15" class="select-option">15% - It was OK</option>
+                        <option value="10" class="select-option">10% - Bad</option>
+                        <option value="5" class="select-option">5% - Terrible</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="form-item">
+                <label for="people" class="form-label">How many people are sharing the bill</label>
+                <div><input type="number" name="people" placeholder="Number of People" class="form-input" id="people" min="1"><span> people</span></div>
+            </div>
+    
+            <div id="result"></div>
+    
+            <div id="calculate">
+                <button id="btn-calculate">CALCULATE!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bai1.js"></script>
+</html>

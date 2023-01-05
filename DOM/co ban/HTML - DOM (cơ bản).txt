@@ -1,0 +1,53 @@
+﻿Bài 1: Giao diện gồm một nút nhấn và một ô input. Nhập vào số bất kỳ, nếu số đó là số chẵn thì thông báo “...là số chẵn”, ngược lại
+
+
+Bài 2: Giao diện gồm một nút nhấn và đoạn văn có nội dung bất kỳ. Nhấn lần 1 đoạn văn ẩn, lần 2 đoạn văn hiện. 
+
+
+Bài 3: Giao diện có 2 nút nhấn và hình vuông, nhấn nút 1 hình vuông to lên gấp đôi, nhấn nút 2, hình vuông nhỏ gấp đôi  
+
+
+Bài 4:Giao diện gồm một nút nhấn và 2 ô input, tính chỉ số BMI của mỗi người dựa vào chiều cao và cân nặng. Biết công thức: bmi = cân nặng / ( chiều cao ^ 2 ) và các phần loại như sau:
+BMI <16: Gầy độ III
+16 ≤ BMI < 17: Gầy độ II
+17 ≤ BMI < 18.5: Gầy độ I
+18.5 ≤ BMI < 25: Bình thường
+25 ≤ BMI < 30: Thừa cân
+30 ≤ BMI < 35: Béo phì độ 1
+35 ≤ BMI < 40: Béo phì độ II
+BMI > 40: Béo phì độ III
+
+
+Bài 5: Giao diện một nút nhấn và một đoạn văn, nhần nút đoạn văn thay đổi nội dung bất kỳ, nhấn lần 2 quay lại lại nội dung cũ
+
+
+Bài 6: cho giao diện có button left , button right và 1 thẻ div chứa ảnh bất kỳ, mỗi khi click button left thì thẻ div di chuyển 100px sang trái, mỗi khi click button right thì thẻ div di chuyển 100px sang phải
+
+
+Bài 7: Cho 2 nút nhấn và một số, một nút nhấn khi nhắn tăng thì số đó tăng, một nút nhấn khi số đó giảm thì số đó giảm
+
+
+Bài 8: Giao diện gồm nút nhấn và một ô input, nhập ký tự bất kỳ. nhấn nút kiểm tra ký tự đó là số hay chữ hay là ký tự đặc biệt
+
+
+Bài 9: Giao diện có 1 nút nhấn , 1 input, 3 hộp hình vuông khác màu, nhập 1 số từ 1 tới 3, nhấn nút hộp tương ứng đổi màu
+
+
+        Bài 10: Giao diện gồm 1 nút nhấn, và ô input, ô input nhập ký tự bất kỳ. Kiểm tra xem ký tự đó có phải là ký viết hoa không.
+
+
+Bài 11: Giao diện gồm 2 nút nhấn và một đoạn văn bản bất kỳ, nhấn nút một, tăng kích cỡ văn bản, nhấn nút 2, đoạn văn thay đổi màu sắc
+
+
+Bài 12: Giao diện có 3 hộp vuông, nhấn vào hộp nào hộp đó biến mất.
+
+
+
+
+Bài 13: http://demo.codegym.vn/8/fakingtextarea/fakingtextarea.html 
+Bài 14: Giao diện một nút nhấn chính giữa màn hình. Nhấn nút màn hình đổi màu random
+
+
+Bài 15: Giao diện gồm 1 nút nhấn, và một form đăng nhập đơn giản, nhấn nút thì xuất hiện form, nhấn nút x thì form biến mất.
+Bài 16: Từ giao diện trên nhập đúng tên đăng nhập thì xuất hiện một hộp vuông màu bất kỳ.
+}

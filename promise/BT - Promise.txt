@@ -1,0 +1,208 @@
+﻿Bài 1 :
+ // giả sử tải file nặng 500 mb
+ // tốc độ tải mỗi giây biến động trong khoảng từ 1 - 10 mb/s 
+// hãy hiển thị % download mỗi giây 1 lần, đến 100% thì thông báo tải thành công và kết thúc 
+// Nâng cao bài 2 là mỗi lần hiển thị % download mới thì thời gian ngẫu nhiên từ 1 đến 3 giây . 
+
+
+Bài 2 :  
+Áp dụng setIterval  , tạo một function có tác dụng giống với đồng hồ đếm ngược.
+Đầu vào số giây cần đếm ngược  .
+nếu Người dùng cố tình nhập vào một số âm thì  in ra “ Hãy nhập số > 0 “ 
+Nếu số giây đã đếm hết (tức số đếm hiện tại <= 0) thì hiển thị thông báo: Bạn đã hết giờ làm bài.
+ Nếu số giây còn thì hiển thị số giây còn lại
+
+
+Bài 3 :  
+
+
+promise1 xử lý tác vụ 3s  cho ra kết quả là 2
+        promise2 xử lý tác vụ 3s và CẦN data của tác vụ 1 trả ra kết quả giá trị x3 kết quả tác vụ 1 (=6)
+        promis3 CẦN data của tác vụ 2 để xác định kết quả tác vụ 2 có > 10 hay không
+        in ra màn hình true hoặc false. 
+
+
+B4: tạo 1 promise1 với tác vụ resovle sau 3 giây (dùng settimeout)
+        tạo 1 promise2 tác vụ resolve sau 2 giây
+        tạo 1 promise3 tác vụ reject sau 2 giây
+dùng .all  để thực hiện song song tác vụ tiết kiệm time.
+
+
+B5: promise1 xử lý tác vụ 3s  cho ra kết quả là 2
+        promise2 xử lý tác vụ 3s và CẦN data của tác vụ 1 trả ra kết quả giá trị x3 kết quả tác vụ 1 (=6)
+        promis3 CẦN data của tác vụ 2 để xác định kết quả tác vụ 2 có > 10 hay không
+        in ra màn hình true hoặc false.
+
+
+B6: áp dụng hợp lý, promise1 xử lý 2s retrun 3. promise2 xử lý 5s return 7
+        Bài toán Cần data của 2 tác vụ trên, biết prmise1 vs promise2 không phụ thuộc nhau. 
+Viết chương trình sao cho kết quả trả về 3+7=10 trong thời gian ngắn nhất 
+
+
+B7:        
+cho tài khoản khách số dư 10 tr thực hiện mua hàng 3 tr và nhận hoàn tiền 10%
+tài khoản shop dư 100tr
+let khachHang = 10
+let shop = 100
+viết promise1 kiểm tra số dư trong 1s và trả về true nếu số dư của khách đủ để thanh toán / false nếu khách không đủ số dư
+viết promise2 để chuyển tiền từ khách sang shop ( khách - 3 , shop + 3) và trả về số dư của 2 bên
+viết promise3 để hoàn tiền 10% sau khi đã thanh toán ở promise2 và trả về số dư của 2 bên
+(khách + 10% * 3 ,  shop - 3 * 10%)   
+
+
+Bài 8  :  
+
+
+var cuaHang = [
+    {
+        ten: 'Bia',
+        loai: 'A',
+gia:10000,
+soLuong:200
+     },
+{
+        ten: 'Rượu',
+        loai: 'A',
+gia:20000,
+soLuong:50
+     },
+{
+        ten: 'Coca',
+        loai: 'A',
+gia:15000,
+soLuong:100
+     },
+{
+        ten: 'Bia Tươi',
+        loai: 'B',
+gia:12000,
+soLuong:55
+     },{
+        ten: 'Rượu Vang',
+        loai: 'B',
+gia:50000,
+soLuong:250
+     },{
+        ten: 'Bánh Đa',
+        loai: 'C',
+gia:5000,
+soLuong:300
+     },{
+        ten: 'Lạc giang',
+        loai: 'C',
+gia:12000,
+soLuong:200
+     },{
+        ten: 'Lạc luộc',
+        loai: 'B',
+gia:14000,
+soLuong:150
+     }, 
+    ]
+ 
+let bienLai = [{
+        ten:'Lạc luộc',
+        soLuong:20
+},
+{
+        ten:'Bia',
+        soLuong:10
+},
+{
+        ten:'Bánh Đa',
+        soLuong:20
+}     
+]
+// c1 viết promise in ra tất cả các sản phẩm của cửa hàng nếu không ra thì trả về (false) .
+// c2: viết promise in ra tất cả các sản phẩm theo từng loại A,B,C .
+// c3 viết promise in ra tất cả các sản phẩm có giá >=15000 .
+// c4: Tính tiền theo biên lai .Nếu số lượng trong cửa hàng không đủ thì in ra “ cửa hàng đủ sản phẩm “ 
+
+
+
+
+Bài 9 : 
+
+
+var  hoaQua = [
+        {ten:”Xoài”,sx:”China”,sl:”100”},
+        {ten:”Xoài”,sx:”VietNam”,sl:”130”},
+        {ten:”Xoài”,sx:”ThaiLan”,sl:”100”},
+        {ten:”Cam”,sx:”China”,sl:”200”},
+{ten:”Cam”,sx:”ThaiLan”,sl:”150”},
+{ten:”Nho”,sx:”VietNam”,sl:”120”},
+{ten:”Xoài”,sx:”ThaiLan”,sl:”100”},
+
+
+]
+
+
+a ) Viết promise in  các trái cây có nơi sản xuất tại VietNam . 
+b ) Viết promise in ra  các trái cây có số lượng (sl) > = 150 . 
+c ) Áp dụng promise Viết function lọc sản phẩm hoa quả  theo tên  .  
+d) Áp dụng promise Viết function lọc sản phẩm hoa quả  theo Nước .  
+e ) Áp dụng promise  viết function tính tổng số lượng theo tên Hoa quả , và theo tên nước .  
+ 
+ Bài 10 : ÁP DỤNG PROMISE .
+// var danhSach=[
+//     {ten: 'huy', phanLoai: 'A', giohang:{soLuong: 12, trongLuong: 12}},
+//     {ten: 'lam', phanLoai:'B', giohang:{soLuong: 8, trongLuong: 7}},
+//     {ten: 'tung', phanLoai:'C', giohang:{soLuong: 10, trongLuong: 8}},
+//     {ten: 'hai', phanLoai:'A', giohang:{soLuong: 8, trongLuong: 20}},
+//     {ten: 'vinh', phanLoai:'A', giohang:{soLuong: 7, trongLuong: 9}},
+//     {ten: 'nam', phanLoai:'C', giohang:{soLuong: 5, trongLuong: 8}},
+//     {ten: 'khanh', phanLoai:'B', giohang:{soLuong: 5, trongLuong: 10}},
+//     ]
+
+
+// var phanLoai = [
+//     {Loai: 'A', heSo: 2, dinhMuc:24, soLuong:10},
+//     {Loai: 'B', heSo: 3, dinhMuc:22, soLuong:7},
+//     {Loai: 'C', heSo: 1, dinh Muc:10, soLuong:9},
+// ]
+
+
+// Hãy tính liệu người mua hàng có đạt đủ điều kiện nhận ưu đãi hay không! Điều kiện để tính khách có nhận được ưu đãi
+// hay không điều kiện để nhận ưu đãi là khách phải đạt được đủ điểm định mức ứng với mỗi loại được khai báo ở array phanLoai và phải có số
+// lượng ít nhất bằng với số lượng của mỗi loại đặt ra.
+// Công thức tính dinhMuc = trongLuong*heSo 
+
+
+// Bài 11 : ÁP DỤNG PROMISE
+// var khachHang = [
+//   { ten: "an", gioiTinh: "nam", diemTichLuy: 125, dichVuDangKy: "A" },
+//   { ten: "binh", gioiTinh: "nam", diemTichLuy: 30, dichVuDangKy: "B" },
+//   { ten: "hoang", gioiTinh: "nam", diemTichLuy: 51, dichVuDangKy: "C" },
+//   { ten: "van", gioiTinh: "nu", diemTichLuy: 75, dichVuDangKy: "D" },
+//   { ten: "thinh", gioiTinh: "nam", diemTichLuy: 25, dichVuDangKy: "D" },
+//   { ten: "lam", gioiTinh: "nam", diemTichLuy: 100, dichVuDangKy: "C" },
+//   { ten: "diep", gioiTinh: "nu", diemTichLuy: 162, dichVuDangKy: "B" },
+//   { ten: "huong", gioiTinh: "nu", diemTichLuy: 71, dichVuDangKy: "B" },
+// ];
+
+
+// var dichVu = [
+//   { ten: "A", khuyenMai: 0.2, giaTri: 250 },
+//   { ten: "B", khuyenMai: 0.18, giaTri: 210 },
+//   { ten: "C", khuyenMai: 0.15, giaTri: 200 },
+//   { ten: "D", khuyenMai: 0.12, giaTri: 180 },
+// ];
+
+
+// var bienLai = [
+//   { ten: "an", giaTri: 300 },
+//   { ten: "binh", giaTri: 180 },
+//   { ten: "hoang", giaTri: 170 },
+//   { ten: "van", giaTri: 100 },
+//   { ten: "lam", giaTri: 200 },
+//   { ten: "thinh", giaTri: 210 },
+//   { ten: "diep", giaTri: 100 },
+//  { ten: "huong", giaTri: 100 },
+// ];
+
+
+// // Hãy in ra danh sách các khách hàng có khả năng đăng ký thẻ VIP với điều kiện điểm tích lũy lớn hơn 100 và dịch vụ đăng ký có
+// // giá trị lớn hơn 180
+// // Hãy in ra danh sách khách hàng theo dịch vụ mà từng người đăng ký
+// // Hãy tính giá tiền mà mỗi người thực chất cần phải trả với hóa đơn của mỗi người = giá trị tại bảng biên lai nhân với khuyến mãi ứng
+// // với gói dịch vụ mà mỗi người đăng ký yêu cầu in ra dưới dạng là 1 array mới
